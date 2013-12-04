@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gérer les fonds d'écran</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+	<div class="content">
+		<header>
+			<div class="button">
+				Addweb
+			</div>
+			<div class="button">
+				<a href="javascript:history.back()">Retour</a>
+			</div>
+		</header>
+        
+		<section>
+			<div class="ico">&#59213;</div><h1>Ajouter un fond</h1>
+			<div class="clear"></div>
+            
+            <small>Pour modifier le fond par defaut, entrez "default" dans ID</small>
+            <div style="height: 10px"></div>
+            
+			<form method="post" id="sendBackground" enctype="multipart/form-data">
+				<input type="text" id="dashboardID" placeholder="VSy36D">
+                <select id="choice">
+                    <option value="background">Fond d'écran</option>
+                    <option value="color">Couleur</option>
+                </select>
+                
+                <span id="backgroundImg2">
+                    <label for="backgroundImg">
+                        <span id="fileReplace">Choissisez un fichier</span>
+                    </label>
+                    <input type="file" id="backgroundImg" style="display: none;">
+                </span>
+                <input style="display:none;" id="backgroundColor" type="color">
+				<button>Valider l'envoie</button>
+			</form>
+        
+			<div class="ico">&#59177;</div><h1>Supprimer un fond</h1>
+			<div class="clear"></div>
+			
+			<form method="post" id="deleteBackground" enctype="multipart/form-data">
+				<input type="text" id="deleteID" placeholder="VSy36D">
+				<button>Valider la suppression</button>
+			</form>
+			
+			<div style="height:15px"></div><hr>
+        
+			<div class="ico">&#59214;</div><h1>Les fonds d'écrans</h1>
+			<div class="clear"></div>
+        
+            <button id="clear">Supprimer tous les fonds d'écran</button><br><br>
+            <table style="width:100%">
+                <th>DASHBOARD ID</th>
+                <th>FOND D'ECRAN</th>
+            
+                <tbody id="list">
+                
+                </tbody>
+            
+            </table>
+        </section>
+    </div>
+    
+    <script type="text/javascript" src="../lib/jquery.js"></script>
+    <script type="text/javascript" src="../lib/background.js"></script>
+</body>
+</html>

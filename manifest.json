@@ -1,0 +1,32 @@
+{
+    "name":        "TrelloBackgroundChanger",
+    "version":     "1.0",
+    "manifest_version": 2,
+
+    "description": "Modification de background Trello",
+    "background": {
+        "page": "view/background.html",
+        "persistent": true
+    },
+    "icons": {
+        "16": "img/iconsmall.png",
+        "48": "img/iconbig.png",
+        "128": "img/icongiant.png"
+    },
+
+    "content_scripts": [ {
+        "js": [ 
+            "lib/jquery.js", 
+            "lib/script.js"
+        ],
+        "matches": [ 
+            "http://*.trello.com/*",
+            "https://*.trello.com/*"
+        ]
+    } ],
+
+    "permissions": [
+        "storage",
+        "unlimitedStorage"
+    ]
+}
