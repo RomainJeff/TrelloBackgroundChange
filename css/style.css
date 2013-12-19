@@ -2,6 +2,15 @@
 /* Design by BOUGIE Alexandre */
 
 /* General */
+/* Font ico */
+@font-face {
+	font-family: "Entypo";
+	src: url('fonts/entypo.svg'),
+		 url('fonts/entypo.ttf'),
+		 url('fonts/entypo.eot'),
+		 url('fonts/entypo.woff');
+}
+
 html {
 	margin: 0;
 	padding: 0;
@@ -61,6 +70,13 @@ header .button:hover {
 	-webkit-border-radius: 3px;
 }
 
+header h3 {
+	text-align: center;
+	color: white;
+	margin-top: 0;
+	padding-top: 5px;
+}
+
 header a {
 	text-decoration: none;
 	color: #f3f3f3;
@@ -118,13 +134,4 @@ section #fileReplace {
 	padding: 6px;
     padding-top: 8px;
     height: 18px;
-}
-
-/* Font ico */
-@font-face {
-	font-family: "Entypo";
-	src: url('../fonts/entypo.svg'),
-		 url('../fonts/entypo.ttf'),
-		 url('../fonts/entypo.eot'),
-		 url('../fonts/entypo.woff');
 }
